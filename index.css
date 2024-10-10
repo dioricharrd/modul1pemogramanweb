@@ -1,0 +1,334 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #111;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #b5b5b5;
+    margin-bottom: 30px;
+}
+
+header button {
+    padding: 15px 30px;
+    background-color: #3d5eff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* New Header (Previously Footer) Styles */
+.new-header {
+    background-color: #181a1c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-curve {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    color: #c9a96f;
+}
+
+.logo-curve::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: -5px;
+    width: 60px;
+    height: 2px;
+    background-color: #c9a96f;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+}
+
+/* Menu Navigation Styles */
+.header-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-nav a:hover {
+    color: #c9a96f;
+}
+
+/* Aligning "More" with other items */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    margin-top: 10px;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Other Sections */
+.get-in-touch {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.get-in-touch:hover {
+    color: #c9a96f;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #4b74db;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-stats div {
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.about-stats h4 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.about-stats p {
+    font-size: 16px;
+    color: #b5b5b5;
+}
+
+.crypto-market-making {
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.crypto-market-making h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.market-making-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.market-making-content .text {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 30px;
+}
+
+.market-making-content p {
+    color: #b5b5b5;
+    margin-bottom: 20px;
+}
+
+.market-making-content .image {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+}
+
+.market-making-content .image img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -20px;
+}
+
+.partners {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.partners h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.partners-logos img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partners-logos img:hover {
+    transform: scale(1.1);
+}
+
+.company-info {
+    padding: 60px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.company-info h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.company-info p {
+    font-size: 16px;
+    color: #b5b5b5;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.join {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.join h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.join p {
+    font-size: 16px;
+    color: #b5b5b5;
+    margin-bottom: 30px;
+}
+
+.join button {
+    padding: 15px 30px;
+    background-color: #3d5eff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
