@@ -1,0 +1,28 @@
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#hasil {
+    margin-top: 15px;
+}

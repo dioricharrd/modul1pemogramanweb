@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <h3>Penjumlahan</h3>
+    <input type="number" id="bil1" placeholder="Bilangan pertama">
+    <input type="number" id="bil2" placeholder="Bilangan kedua">
+    <button onclick="hitung()">Jumlahkan</button>
+    <button onclick="reset()">Reset</button>
+    <div id="hasil">Hasil: </div>
+</div>
+
+<script>
+    function hitung() {
+        var bil1 = parseInt(document.getElementById('bil1').value);
+        var bil2 = parseInt(document.getElementById('bil2').value);
+        if (!isNaN(bil1) && !isNaN(bil2)) {
+            var hasil = bil1 + bil2;
+            document.getElementById('hasil').innerHTML = 'Hasil: ' + hasil;
+        } else {
+            alert('Input harus angka!');
+        }
+    }
+
+    function reset() {
+        document.getElementById('bil1').value = '';
+        document.getElementById('bil2').value = '';
+        document.getElementById('hasil').innerHTML = 'Hasil:';
+    }
+</script>
+
+</body>
+</html>
