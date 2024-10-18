@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/calm-aesthetic-desktop-vpf4cok1wwusty70.jpg');
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+}
+
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    max-height: 40vh; /* Constrain height */
+    overflow: hidden; /* Ensures inner overflow handling */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50vh; /* Set a height limit for the list */
+    overflow-y: auto; /* Add vertical scroll when necessary */
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button.edit {
+    background-color: #ffc107;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries for responsive design */
+@media (min-width: 600px) {
+    .input-container {
+        flex-direction: row;
+    }
+
+    button {
+        width: auto;
+    }
+}
