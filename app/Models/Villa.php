@@ -27,4 +27,19 @@ class Villa extends Model
     {
         return ucwords($value);
     }
+    
+    public function facilities()
+    {
+        return $this->hasMany(Facility::class);
+    }
+
+    public function promotions()
+    {
+        return $this->hasMany(Promotion::class);
+    }
+
+    public function galleries()
+    {
+        return $this->hasMany(Gallery::class);
+    }
 }
